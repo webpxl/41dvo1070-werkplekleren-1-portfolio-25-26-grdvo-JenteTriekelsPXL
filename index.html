@@ -1,13 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Dashboard Triekels Jente</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="stijl.css">
+
 </head>
 <body>
-<p> Jente Triekels</p>
+
+<div class="dashboard">
+
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="dashboard-title">Triekels Jente / Designer</div>
+        <div class="dashboard-time" id="clock"></div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="dashboard-nav">
+        <div class="nav-item">Profiel</div>
+        <div class="nav-item">Tijdlijn</div>
+        <div class="nav-item">Skills</div>
+        <div class="nav-item">Hobbies</div>
+        <div class="nav-item">Projecten</div>
+        <div class="nav-item">Doelen</div>
+    </nav>
+
+    <!-- Content -->
+    <main class="dashboard-content">
+
+        <!-- Left column -->
+        <section class="column-left">
+
+            <div class="panel profile-card">
+                <img src="https://via.placeholder.com/260x180" alt="Profielfoto">
+                <div class="profile-info">
+                    Triekels Jente<br>
+                    Triekels.Jente@gmail.com<br>
+                    7 mei 2004<br>
+                    Diest, 3290
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-title">Skills</div>
+                <div class="chart-placeholder"></div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-title">Hobbies</div>
+                <div class="chart-placeholder"></div>
+            </div>
+
+        </section>
+
+        <!-- Middle column -->
+        <section class="column-middle">
+
+            <div class="panel">
+                <div class="panel-title">Tijdlijn</div>
+                <div class="timeline">
+                    <div class="timeline-block kantoor">2018–2021<br>Kantoor</div>
+                    <div class="timeline-block logistiek">2021–2023<br>Logistiek</div>
+                    <div class="timeline-block schakeljaar">2023–2024<br>Schakeljaar</div>
+                    <div class="timeline-block education">2024–2025<br>Education</div>
+                    <div class="timeline-block digital">2025–2026<br>Digital</div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-title">Projecten</div>
+                <div class="project"><span>Project 1</span><span>45%</span></div>
+                <div class="project"><span>Project 2</span><span>70%</span></div>
+                <div class="project"><span>Project 3</span><span>20%</span></div>
+            </div>
+
+        </section>
+
+        <!-- Right column -->
+        <section class="column-right">
+
+            <div class="panel">
+                <div class="panel-title">Doelen</div>
+
+                <div class="goal">
+                    <strong>Doel 1</strong>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="60"></div>
+                    </div>
+                </div>
+
+                <div class="goal">
+                    <strong>Doel 2</strong>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="35"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+</div>
+
+<!-- JavaScript -->
+<script defer src="javascript.js"></script>
 </body>
 </html>
