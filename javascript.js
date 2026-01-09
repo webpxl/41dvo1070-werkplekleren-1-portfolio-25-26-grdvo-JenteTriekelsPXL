@@ -15,7 +15,6 @@ function loadProgressBars() {
     });
 }
 
-
 updateClock();
 loadProgressBars();
 setInterval(updateClock, 1000);
