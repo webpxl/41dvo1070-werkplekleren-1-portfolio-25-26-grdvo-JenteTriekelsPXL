@@ -3,113 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Triekels Jente</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-
-    <!-- CSS -->
+    <title>Triekels Jente - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stijl.css">
-
-
 </head>
 <body>
+<!-- Navigation -->
+<nav>
+    <div class="nav-header">
+        <div class="nav-title">Triekels Jente / Designer</div>
+        <div class="nav-time">15:12 <span id="current-date">11/12/2025</span></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">
+            <svg class="nav-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+            Home
+        </a></li>
+        <li><a href="#profiel" class="nav-link">
+            <svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            Profiel
+        </a></li>
+        <li><a href="#tijdlijn" class="nav-link">
+            <svg class="nav-icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            Tijdlijn
+        </a></li>
+        <li><a href="#skills" class="nav-link">
+            <svg class="nav-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+            Skills
+        </a></li>
+        <li><a href="#hobbies" class="nav-link">
+            <svg class="nav-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+            Hobbies
+        </a></li>
+        <li><a href="#projecten" class="nav-link">
+            <svg class="nav-icon" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+            Projecten
+        </a></li>
+        <li><a href="#doelen" class="nav-link">
+            <svg class="nav-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            Doelen
+        </a></li>
+    </ul>
+</nav>
 
-<div class="dashboard">
+<!-- Home Section -->
+<section id="home">
+    <div class="container">
+        <div class="home-content">
+            <h1 class="home-title">Triekels Jente</h1>
+            <p class="home-subtitle">Designer / Developer</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Header -->
-    <header class="dashboard-header">
-        <div class="dashboard-title">Triekels Jente / Designer</div>
-        <div class="dashboard-time" id="clock"></div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="dashboard-nav">
-        <div class="nav-item">Profiel</div>
-        <div class="nav-item">Tijdlijn</div>
-        <div class="nav-item">Skills</div>
-        <div class="nav-item">Hobbies</div>
-        <div class="nav-item">Projecten</div>
-        <div class="nav-item">Doelen</div>
-    </nav>
-
-    <!-- Content -->
-    <main class="dashboard-content">
-
-        <!-- Left column -->
-        <section class="column-left">
-
-            <div class="panel profile-card">
-                <img src="https://via.placeholder.com/260x180" alt="Profielfoto">
-                <div class="profile-info">
-                    Triekels Jente<br>
-                    Triekels.Jente@gmail.com<br>
-                    7 mei 2004<br>
-                    Diest, 3290
-                </div>
-            </div>
-
-            <div class="panel">
-                <div class="panel-title">Skills</div>
-                <div class="chart-placeholder"></div>
-            </div>
-
-            <div class="panel">
-                <div class="panel-title">Hobbies</div>
-                <div class="chart-placeholder"></div>
-            </div>
-
-        </section>
-
-        <!-- Middle column -->
-        <section class="column-middle">
-
-            <div class="panel">
-                <div class="panel-title">Tijdlijn</div>
-                <div class="timeline">
-                    <div class="timeline-block kantoor">2018–2021<br>Kantoor</div>
-                    <div class="timeline-block logistiek">2021–2023<br>Logistiek</div>
-                    <div class="timeline-block schakeljaar">2023–2024<br>Schakeljaar</div>
-                    <div class="timeline-block education">2024–2025<br>Education</div>
-                    <div class="timeline-block digital">2025–2026<br>Digital</div>
-                </div>
-            </div>
-
-            <div class="panel">
-                <div class="panel-title">Projecten</div>
-                <div class="project"><span>Project 1</span><span>45%</span></div>
-                <div class="project"><span>Project 2</span><span>70%</span></div>
-                <div class="project"><span>Project 3</span><span>20%</span></div>
-            </div>
-
-        </section>
-
-        <!-- Right column -->
-        <section class="column-right">
-
-            <div class="panel">
-                <div class="panel-title">Doelen</div>
-
-                <div class="goal">
-                    <strong>Doel 1</strong>
-                    <div class="progress-bar">
-                        <div class="progress" data-progress="60"></div>
+<!-- Profiel Section -->
+<section id="profiel">
+    <div class="container">
+        <h2 class="section-title">Profiel</h2>
+        <div class="profiel-grid">
+            <div class="profiel-card">
+                <div class="profiel-info">
+                    <div class="info-header">Mijn Info:</div>
+                    <div class="info-grid">
+                        <span class="info-label">Naam:</span>
+                        <span>Triekels Jente</span>
+                        <span class="info-label">E-mail:</span>
+                        <span>Triekels.Jente@Gmail.com</span>
+                        <span class="info-label">Geboorte:</span>
+                        <span>7 Mei 2004</span>
+                        <span class="info-label">Plaats:</span>
+                        <span>Diest, 3290</span>
                     </div>
                 </div>
+                <img src="Foto's/fcv.jpg" alt="Profielfoto" class="profiel-image"/>
+            </div>
+            <div class="profiel-card about-section">
+                <h3>Over mij</h3>
+                <p>Ik ben iemand met een sterke interesse in technologie en alles wat daarmee komt kijken. Ik haal veel plezier uit het werken met nieuwe apparaten, systemen en innovaties, en ik vind het belangrijk om nieuwsgierig en leerbereid te zijn. Mijn nieuwsgierigheid drijft mij om dingen grondig uit te zoeken. Mijn focus ligt altijd op het begrijpen van hoe dingen werken en hoe ik ze kan toepassen.</p>
+                <p>In mijn vrije tijd hou ik graag bezig met gamen, waar ik zowel ontspanning als uitdaging in vind. Daarnaast is regelmatig kaarten en mijn competitieve kant stimuleert en mij de kans geeft om strategie en precisie te verfijnen. Deze hobby's starten goed aan bij mijn interesse in techniek, snelheid en nauwkeurigheid.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <div class="goal">
-                    <strong>Doel 2</strong>
-                    <div class="progress-bar">
-                        <div class="progress" data-progress="35"></div>
+<!-- Tijdlijn Section -->
+<section id="tijdlijn">
+    <div class="container">
+        <h2 class="section-title">Tijdlijn</h2>
+        <div class="timeline-container">
+            <div class="timeline-header">
+                <div class="timeline-period">
+                    <div class="period-color" style="background: linear-gradient(90deg, #ff9999, #ffcccc);"></div>
+                    <h3>2018-2021</h3>
+                    <div class="category">Kantoor</div>
+                </div>
+                <div class="timeline-period">
+                    <div class="period-color" style="background: linear-gradient(90deg, #ffcc99, #ffe5cc);"></div>
+                    <h3>2021-2023</h3>
+                    <div class="category">Logistiek</div>
+                </div>
+                <div class="timeline-period">
+                    <div class="period-color" style="background: linear-gradient(90deg, #ccff99, #e5ffcc);"></div>
+                    <h3>2023-2024</h3>
+                    <div class="category">Schakeljaar</div>
+                </div>
+                <div class="timeline-period">
+                    <div class="period-color" style="background: linear-gradient(90deg, #99ccff, #cce5ff);"></div>
+                    <h3>2024-2025</h3>
+                    <div class="category">Education</div>
+                </div>
+                <div class="timeline-period">
+                    <div class="period-color" style="background: linear-gradient(90deg, #cc99ff, #e5ccff);"></div>
+                    <h3>2025-2026</h3>
+                    <div class="category">Digital</div>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <p>Dit is de tijdlijn van mijn afgelopen jaren en welke studies ik tijdens deze deed.</p>
+                <p><strong>Kantoor</strong> hield alles in van Kopen, Verkopen, Boekhouden en klantenwerking zoals in een bedrijf.</p>
+                <p><strong>Kantoor</strong> werd hervormd naar <strong>Logistiek</strong> en dit hield alles in wat te maken had met magazijnen.</p>
+                <p><strong>Schakeljaar</strong> was mijn extra jaar die ik deed om voor te bereiden op hogeschool.</p>
+                <p>Op hogeschool deed ik <strong>Education</strong>, hoewel ik dit echt tof vond wou ik liever meer creatief werken</p>
+                <p>Nu doe ik <strong>Digitale Vormgeving</strong> waar ik dus zo creatief kan zijn als ik wil</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skills-chart">
+                <div class="chart-circle">
+                    <div class="chart-segments">
+                        <div class="segment-line"></div>
+                        <div class="segment-line"></div>
+                        <div class="segment-line"></div>
+                        <div class="segment-line"></div>
                     </div>
                 </div>
-
+                <div class="skills-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #9999ff;"></div>
+                        <span class="legend-text">Navision</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ffff99;"></div>
+                        <span class="legend-text">Premiere Pro</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #99ff99;"></div>
+                        <span class="legend-text">Word</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ff99ff;"></div>
+                        <span class="legend-text">Photoshop</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #99ffff;"></div>
+                        <span class="legend-text">Excel</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ff9999;"></div>
+                        <span class="legend-text">Illustrator</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ffcc99;"></div>
+                        <span class="legend-text">Powerpoint</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ff99cc;"></div>
+                        <span class="legend-text">Figma</span>
+                    </div>
+                </div>
             </div>
+            <div class="skills-description">
+                <h3>Dit is een overzicht van skills over tools die ik bezit.</h3>
+                <p><strong>Word, Excel en Powerpoint</strong> zijn de basics en ik ben erg sterk in deze programma's.</p>
+                <p><strong>Navision</strong> is een ERP pakket waar ik nog kennis van over heb.</p>
+                <p><strong>Photoshop, Illustrator en Figma</strong> was nieuw voor mij maar ik heb veel plezier om met deze programma's te werken.</p>
+                <p><strong>Premiere Pro</strong> of sommige andere video edit programma's werk ik vooral privé mee voor plezier.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        </section>
+<!-- Hobbies Section -->
+<section id="hobbies">
+    <div class="container">
+        <h2 class="section-title">Hobbies</h2>
+        <div class="hobbies-grid">
+            <div class="hobbies-chart">
+                <div class="hobby-circle">
+                    <div class="hobby-inner"></div>
+                </div>
+                <div class="hobbies-list">
+                    <div class="hobby-item">
+                        <span class="hobby-name">■ Gamen</span>
+                        <span class="hobby-frequency">5u / dag</span>
+                    </div>
+                    <div class="hobby-item">
+                        <span class="hobby-name">■ Karten</span>
+                        <span class="hobby-frequency">1u / maand</span>
+                    </div>
+                    <div class="hobby-item">
+                        <span class="hobby-name">■ Muziek</span>
+                        <span class="hobby-frequency">15 min / week</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hobbies-description">
+                <h3>Een klein overzicht van hobbies die ik heb.</h3>
+                <p><strong>Gamen</strong> doe ik heel erg lang, het is een perfecte ontsnapping van de echte wereld.</p>
+                <p><strong>Karten</strong> doe ik zo vaak als ik kan alleen kost het wel wat geld om het echt veel te doen. Maar dat stopt de passie voor racen niet.</p>
+                <p><strong>Muziek</strong> is niet zomaar luisteren maar ook zelf maken, dit wil ik meer gaan doen maar vind ik nog niet de juiste stijl voor.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    </main>
-</div>
+<!-- Projecten Section -->
+<section id="projecten">
+    <div class="container">
+        <h2 class="section-title">Projecten</h2>
+        <div class="projecten-grid">
+            <div class="project-card">
+                <svg class="project-arrow" viewBox="0 0 100 100">
+                    <path d="M50 20 L50 70 M50 70 L35 55 M50 70 L65 55" stroke="currentColor" stroke-width="6" fill="none"/>
+                </svg>
+                <div class="project-title">Project 1</div>
+                <div class="project-percentage">%</div>
+            </div>
+            <div class="project-card">
+                <svg class="project-arrow" viewBox="0 0 100 100">
+                    <path d="M50 20 L50 70 M50 70 L35 55 M50 70 L65 55" stroke="currentColor" stroke-width="6" fill="none"/>
+                </svg>
+                <div class="project-title">Project 2</div>
+                <div class="project-percentage">%</div>
+            </div>
+            <div class="project-card">
+                <svg class="project-arrow" viewBox="0 0 100 100">
+                    <path d="M50 20 L50 70 M50 70 L35 55 M50 70 L65 55" stroke="currentColor" stroke-width="6" fill="none"/>
+                </svg>
+                <div class="project-title">Project 3</div>
+                <div class="project-percentage">%</div>
+            </div>
+            <div class="projecten-description">
+                <p>Hier komen alle projecten te staan waar ik mee bezig ben en hoever ik ermee klaar ben.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- JavaScript -->
-<script defer src="javascript.js"></script>
+<!-- Doelen Section -->
+<section id="doelen">
+    <div class="container">
+        <h2 class="section-title">Doelen</h2>
+        <div class="doelen-grid">
+            <div class="doel-card">
+                <div class="doel-title">Doel 1</div>
+                <div class="doel-progress">
+                    <div class="doel-progress-bar" data-progress="0">%</div>
+                </div>
+                <div class="doel-description">Beschrijving doel</div>
+            </div>
+            <div class="doel-card">
+                <div class="doel-title">Doel 2</div>
+                <div class="doel-progress">
+                    <div class="doel-progress-bar" data-progress="0">%</div>
+                </div>
+                <div class="doel-description">Beschrijving doel</div>
+            </div>
+            <div class="doelen-description">
+                <p>Hier komen al mijn doelen, dit gaat en kan van alles zijn. Nu is het een beetje leeg maar dit gaat snel nog veranderen.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="javascript.js"></script>
 </body>
 </html>
