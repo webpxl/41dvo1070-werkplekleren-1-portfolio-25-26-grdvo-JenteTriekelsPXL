@@ -747,3 +747,55 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+footer {
+    background: var(--darker-bg);
+    padding: 0;
+    border-top: 3px solid var(--neon-yellow);
+}
+
+.footer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px 40px;
+    background: var(--card-bg);
+    color: var(--neon-yellow);
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 0 30px rgba(244, 255, 0, 0.2);
+}
+
+.footer-button:hover {
+    background: var(--neon-yellow);
+    color: var(--darker-bg);
+    box-shadow: 0 0 50px rgba(244, 255, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+}
+
+@media (max-width: 768px) {
+    .footer-button {
+        font-size: 1rem;
+        padding: 20px 30px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-icon {
+        width: 24px;
+        height: 24px;
+    }
+}

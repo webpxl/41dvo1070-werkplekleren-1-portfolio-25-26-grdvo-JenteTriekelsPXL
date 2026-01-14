@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflectie & Situering - Triekels Jente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stijl.css">
+    <style>
+        .reflection-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 150px 40px 80px;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: var(--card-bg);
+            color: var(--neon-yellow);
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid var(--neon-yellow);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            margin-bottom: 40px;
+        }
+
+        .back-button:hover {
+            background: var(--neon-yellow);
+            color: var(--darker-bg);
+            transform: translateX(-5px);
+        }
+
+        .back-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .reflection-card {
+            background: var(--card-bg);
+            border: 3px solid var(--neon-yellow);
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 0 0 30px rgba(244, 255, 0, 0.2);
+            margin-bottom: 40px;
+        }
+
+        .reflection-card h2 {
+            color: var(--neon-yellow);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .reflection-card h3 {
+            color: var(--neon-yellow);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .reflection-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .reflection-card ul,
+        .reflection-card ol {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .reflection-card li {
+            margin-bottom: 10px;
+        }
+
+        .reflection-card strong {
+            color: var(--neon-yellow);
+            font-weight: 700;
+        }
+
+        .highlight-box {
+            background: rgba(244, 255, 0, 0.1);
+            border-left: 4px solid var(--neon-yellow);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .reflection-container {
+                padding: 120px 20px 60px;
+            }
+
+            .reflection-card {
+                padding: 30px 20px;
+            }
+
+            .reflection-card h2 {
+                font-size: 1.8rem;
+            }
+
+            .reflection-card h3 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+    <div class="nav-header">
+        <div class="nav-title">Triekels Jente / Designer</div>
+        <div class="nav-time">Reflectie & Situering</div>
+    </div>
+</nav>
+
+<div class="reflection-container">
+    <a href="index.html" class="back-button">
+        <svg class="back-icon" viewBox="0 0 24 24">
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+        </svg>
+        Terug naar Portfolio
+    </a>
+
+    <div class="reflection-card">
+        <h2>Reflectie</h2>
+
+        <h3>Wat heb ik geleerd?</h3>
+        <p>
+            [Hier kun je beschrijven wat je hebt geleerd tijdens dit project of semester.
+            Denk aan technische vaardigheden, persoonlijke ontwikkeling, of inzichten over design.]
+        </p>
+
+        <h3>Wat ging goed?</h3>
+        <p>
+            [Beschrijf hier je successen en sterke punten tijdens het project.]
+        </p>
+
+        <h3>Wat kan beter?</h3>
+        <p>
+            [Wees eerlijk over de uitdagingen die je tegenkwam en wat je anders zou doen.]
+        </p>
+
+        <div class="highlight-box">
+            <strong>Belangrijkste inzicht:</strong>
+            <p>[Vat hier je belangrijkste leerpunt samen.]</p>
+        </div>
+    </div>
+
+    <div class="reflection-card">
+        <h2>Situering binnen DVO</h2>
+
+        <h3>Relatie tot de opleiding</h3>
+        <p>
+            [Leg hier uit hoe dit project past binnen je opleiding Digitale Vormgeving.
+            Welke competenties heb je ontwikkeld?]
+        </p>
+
+        <h3>Toegepaste vaardigheden</h3>
+        <ul>
+            <li><strong>Design:</strong> [Beschrijf je designkeuzes]</li>
+            <li><strong>Development:</strong> [Beschrijf de technische aspecten]</li>
+            <li><strong>Tools:</strong> [Welke tools heb je gebruikt?]</li>
+        </ul>
+
+        <h3>Toekomstige doelen</h3>
+        <p>
+            [Wat wil je nog leren? Waar wil je je verder in ontwikkelen binnen DVO?]
+        </p>
+    </div>
+</div>
+
+<footer>
+    <a href="index.html" class="footer-button">
+        <svg class="footer-icon" viewBox="0 0 24 24">
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+        </svg>
+        Terug naar Portfolio
+    </a>
+</footer>
+</body>
+</html>

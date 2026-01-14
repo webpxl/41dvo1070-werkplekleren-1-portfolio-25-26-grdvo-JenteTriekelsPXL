@@ -12,7 +12,7 @@ function updateCurrentDate() {
 }
 
 // ========================
-// Navigation Active State
+// Navigation
 // ========================
 function updateActiveNavLink() {
     const sections = document.querySelectorAll('section');
@@ -59,7 +59,7 @@ function initSmoothScroll() {
 }
 
 // ========================
-// Animate Progress Bars
+// Progress Bars
 // ========================
 function animateProgressBars() {
     const observerOptions = {
@@ -91,9 +91,7 @@ function animateProgressBars() {
     }
 }
 
-// ========================
-// Initialize All Functions
-// ========================
+
 function init() {
     updateCurrentDate();
     updateActiveNavLink();
@@ -101,7 +99,7 @@ function init() {
     animateProgressBars();
 }
 
-// Run initialization when DOM is loaded
+
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
 } else {
